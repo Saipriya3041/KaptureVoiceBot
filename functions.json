@@ -1,0 +1,17 @@
+{
+  "verify_customer": {
+    "description": "Verify customer identity before debt disclosure",
+    "inputs": ["customer_id", "dob", "pan_last4"],
+    "outputs": ["verified"]
+  },
+  "log_promise_to_pay": {
+    "description": "Record payment commitment",
+    "inputs": ["customer_id", "ptp_date", "amount"],
+    "outputs": ["status"]
+  },
+  "send_payment_link": {
+    "description": "Send payment link via SMS/WhatsApp",
+    "inputs": ["customer_id", "channel"],
+    "outputs": ["status"]
+  }
+}
